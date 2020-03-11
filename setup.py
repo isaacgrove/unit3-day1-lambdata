@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 setup(
-    name="lambdata",
+    name="lambdata-isaacgrove",
     version="0.1",
     packages=find_packages(),
     # Project uses reStructuredText, so ensure that the docutils get
@@ -13,7 +13,7 @@ setup(
     keywords="",
     url="",   # project home page, if any
     classifiers=[
-        "License :: MIT"
+        "License :: OSI Approved :: MIT License"
     ]
     # could also include long_description, download_url, etc.
 )
