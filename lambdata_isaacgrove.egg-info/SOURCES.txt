@@ -1,0 +1,12 @@
+README.md
+setup.py
+lambdata_isaacgrove.egg-info/PKG-INFO
+lambdata_isaacgrove.egg-info/SOURCES.txt
+lambdata_isaacgrove.egg-info/dependency_links.txt
+lambdata_isaacgrove.egg-info/requires.txt
+lambdata_isaacgrove.egg-info/top_level.txt
+my_lambdata/__init__.py
+my_lambdata/clothes.py
+my_lambdata/clothes_script.py
+my_lambdata/my_mod.py
+my_lambdata/my_script.py

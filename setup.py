@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
     name="lambdata-isaacgrove",
-    version="0.1",
+    version="0.3",
     packages=find_packages(),
     # Project uses reStructuredText, so ensure that the docutils get
     # installed or upgraded on the target machine
