@@ -36,18 +36,20 @@ def list_to_new_column(list, df, column_name):
     return df
 
 # needs Numpy and Pandas
-def outlier_remover(column):
+def outlier_remover(df, column):
     '''
     Function finds values > 1.5*interquartile range and removes them
     from the df.
 
     Value passed should be in the form of df['column_name']
     '''
+    df = df
 
-    df = df[(column <= (1.5*(np.percentile(column, 0.75) - 
-    np.percentile(column, 0.25)) + np.percentile(column, 0.75))) & 
-    (column >= np.percentile(column, 0.75) - (1.5*(np.percentile(column, 0.75) - 
-    np.percentile(column, 0.25))))]
+    x = np.percentile(column, 0.25)
+    y = np.percentile(column, 0.75)
+
+    df = df[(column <= (y + 1.5(y - x))) & 
+    (column >= (x - 1.5(y - x)))]
 
     return df
 
